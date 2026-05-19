@@ -1,0 +1,44 @@
+name: ai
+description: "AI-powered voice assistant app."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # ── Env & HTTP ─────────────────────────────────────────────
+  flutter_dotenv: ^5.1.0
+  http: ^1.2.1
+  shared_preferences: ^2.3.2
+
+  # ── Voice / Speech ─────────────────────────────────────────
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.0
+
+  # ── Contacts ───────────────────────────────────────────────
+  flutter_contacts: ^1.1.9+1
+  permission_handler: ^11.3.1
+
+  # ── SMS ────────────────────────────────────────────────────
+  flutter_sms_inbox: ^1.0.4
+
+  # ── URL / Deep links ───────────────────────────────────────
+  url_launcher: ^6.3.0
+
+  # ── UI ─────────────────────────────────────────────────────
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
